@@ -334,46 +334,66 @@
 
 <!-- #PORTFOLIO -->
 <article class="portfolio" data-page="portfolio">
-    <header>
-      <h2 class="h2 article-title">Portfolio</h2>
-    </header>
-  
-    <section class="projects">
-      <ul class="project-list">
-        <li class="project-item active" data-filter-item data-category="web development">
-          <a href="https://github.com/JhonatanSmith/Currency-Converter.git">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-              <img src="./assets/images/project-1.png" alt="finance" loading="lazy">
-            </figure>
-            <h3 class="project-title">Currency Converter</h3>
-            <p class="project-category">Web development</p>
-          </a>
-        </li>
-      </ul>
-      
-    </section>
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
 
-    <section class="projects">
-      <ul class="project-list">
-        <li class="project-item active" data-filter-item data-category="web development">
-          <a href="https://github.com/JhonatanSmith/Certificates">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-              <img src="./assets/images/project-2.png" alt="finance" loading="lazy">
-            </figure>
-            <h3 class="project-title">Certificates</h3>
-            <p class="project-category">Just men showing off a liite bit :p</p>
-          </a>
-        </li>
-      </ul>
-    </section>
-    
-  </article>
+  <!-- one projects section, one UL, many LIs -->
+  <section class="projects">
+    <ul class="project-list">
+      <!-- (row 1, col 1) -->
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/JhonatanSmith/Currency-Converter.git">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-1.png" alt="Currency Converter" loading="lazy">
+          </figure>
+          <h3 class="project-title">Currency Converter</h3>
+          <p class="project-category">Web development, scraping and saving money when being a nerd and buying games in Turkish PS Store</p>
+        </a>
+      </li>
+
+      <!-- (row 1, col 2) -->
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/JhonatanSmith/Certificates">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-2.png" alt="Certificates" loading="lazy">
+          </figure>
+          <h3 class="project-title">Certificates</h3>
+          <p class="project-category">Just me showing off a little bit that i am a nerd and have some cool certifications :p</p>
+        </a>
+      </li>
+
+      <!-- (row 1, col 3) — third project -->
+      <li class="project-item active" data-filter-item data-category="Data science">
+        <a href="https://github.com/JhonatanSmith/DP-100-Exam-Question-App">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-3.png" alt="Third project" loading="lazy">
+          </figure>
+          <h3 class="project-title">Dp-100 Study App</h3>
+          <p class="project-category">App created to prepare myself to the DP-100 exam. Bunch of bugs and questions</p>
+        </a>
+      </li>
+
+      <!-- (row 2, col 1) — fourth project placeholder -->
+      <li class="project-item active" data-filter-item data-category="Data science">
+        <a href="https://github.com/JhonatanSmith/House-renting-prices">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-4.png" alt="Fourth project" loading="lazy">
+          </figure>
+          <h3 class="project-title">House renting prices - Gentrification in Colombia</h3>
+          <p class="project-category">A bunch of webscraping, AI and Tons of faith to finish this project</p>
+        </a>
+      </li>
+
+      <!-- add more <li> blocks in row-major order as you build out the grid -->
+    </ul>
+  </section>
+</article>
+
   
   <!-- custom js link -->
   <script src="./assets/js/script.js"></script>

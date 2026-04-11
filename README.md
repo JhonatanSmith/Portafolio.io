@@ -1,6 +1,36 @@
-# My virtual CV
+# Jhonatan Smith Portfolio
 
+Premium single-page portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-I welcome you to my very first web portfolio. Here you will find the source code that i used to create this page. 
+## Stack
 
-NOTE:Still on developt so, be patiante!
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build static export
+
+```bash
+npm run build
+```
+
+The static output is generated in `out/`.
+
+## GitHub Pages
+
+If the site is deployed under a repository path instead of a root domain, set:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/your-repo-name
+```
+
+before running the production build.

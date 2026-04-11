@@ -1,0 +1,765 @@
+# Portfolio Refactor Master Prompt for GitHub Copilot
+
+Use this document as the single source of truth to rebuild my personal portfolio website from scratch as a premium, production-ready, highly polished portfolio for a Data Engineer / Data Scientist / GenAI Engineer.
+
+Your role is not to make minor edits. Your role is to perform a full professional refactor and redesign of the current static portfolio into a modern, elegant, responsive, animated, premium-quality portfolio website that looks like a top-tier tech product website rather than a traditional CV website.
+
+The final result must feel intentional, minimal, sophisticated, modern, technically credible, visually memorable, and suitable for an engineer working in data engineering, machine learning, cloud, analytics, and generative AI.
+
+---
+
+## 1. Project Objective
+
+Rebuild my existing personal portfolio website into a highly professional portfolio that:
+
+* Presents me as a serious technical professional.
+* Highlights my profile as a Data Engineer, Data Scientist, and GenAI Engineer.
+* Feels visually premium and modern.
+* Uses a landing-page style layout with smooth scrolling instead of tab-based content switching.
+* Is fully responsive and mobile-first.
+* Includes tasteful animations and micro-interactions.
+* Uses a strong visual system with modern color harmony.
+* Keeps the experience fast, clean, accessible, and easy to maintain.
+* Is deployable as a static site through GitHub Pages.
+
+This is a redesign and refactor, not a patch.
+
+---
+
+## 2. Current Situation and Constraints
+
+The current portfolio is built as a static HTML/CSS/JS site with:
+
+* a left sidebar profile layout
+* internal tab navigation (About / Resume / Portfolio)
+* custom CSS and a basic navigation script
+* a dark theme with yellow accents
+* several existing assets and images
+
+Important constraints:
+
+* Do not preserve the current layout.
+* Do not preserve the current sidebar design.
+* Do not preserve the current tab-based navigation paradigm.
+* Do not preserve the current color palette unless reinterpreted in a much more refined way.
+* Do not keep legacy visual patterns just because they already exist.
+* You may keep only the profile photo and project images if useful.
+* Assume all other visual assets may be replaced.
+
+The current content is useful as raw input, but the design system and layout should be rebuilt from scratch.
+
+---
+
+## 3. New Direction
+
+The new portfolio must follow this positioning:
+
+**A premium portfolio website for a modern data professional with strong engineering depth and AI capability.**
+
+It should communicate:
+
+* technical rigor
+* product mindset
+* cloud and data architecture maturity
+* strong execution ability
+* clean aesthetic taste
+* professionalism without looking corporate or boring
+
+The design language should feel somewhere between:
+
+* a modern startup landing page
+* a polished developer portfolio
+* a subtle AI/data-inspired premium interface
+
+It must not feel like:
+
+* a generic portfolio template
+* a student CV page
+* a Word document turned into HTML
+* a Bootstrap-looking profile page
+* an over-decorated neon cyberpunk page
+
+---
+
+## 4. Mandatory Tech Stack
+
+Build the project using the following stack:
+
+* **Next.js** (latest stable version, App Router preferred if suitable)
+* **TypeScript**
+* **Tailwind CSS**
+* **Framer Motion** for animations
+* **Lucide React** for icons
+* **shadcn/ui** only if needed for clean reusable UI primitives
+
+The output must be compatible with **static export** so it can be deployed to **GitHub Pages**.
+
+Implementation requirements:
+
+* Structure the project cleanly and professionally.
+* Avoid unnecessary complexity.
+* Avoid overengineering.
+* Use reusable components.
+* Prefer clean composition over monolithic files.
+* Optimize for maintainability.
+
+---
+
+## 5. Deployment Constraint
+
+The final project must be buildable and deployable as a static site to GitHub Pages.
+
+Take this into account when implementing:
+
+* Prefer static content and local assets.
+* Avoid server-only features.
+* Avoid API dependencies unless they are purely optional and safely ignorable.
+* Make sure routing and assets work correctly in static export mode.
+* Include any Next.js static export configuration needed.
+
+---
+
+## 6. Design Philosophy
+
+The design must be guided by these principles:
+
+1. **Premium simplicity**
+
+   * clean layouts
+   * strong spacing
+   * minimal clutter
+   * every section feels intentional
+
+2. **Modern technical credibility**
+
+   * looks like the site of a serious engineer
+   * not flashy for the sake of being flashy
+   * visually strong but restrained
+
+3. **Narrative flow**
+
+   * the page should read like a professional story
+   * the user should scroll naturally through the content
+   * information hierarchy must be excellent
+
+4. **Motion with discipline**
+
+   * smooth, elegant animations
+   * no gimmicks
+   * no annoying repeated motion
+   * animation should reinforce quality, not distract
+
+5. **Visual coherence**
+
+   * one solid design language
+   * one coherent palette
+   * one typography system
+   * consistent component behavior
+
+---
+
+## 7. Page Architecture
+
+Build the portfolio as a **single-page scrolling experience** with anchored navigation.
+
+Use this section order:
+
+### 1. Hero Section
+
+Purpose:
+
+* instant impact
+* establish identity
+* present positioning clearly
+* create premium first impression
+
+Include:
+
+* my name
+* a strong title/subtitle
+* a concise professional value proposition
+* CTA buttons such as:
+
+  * View Projects
+  * Download Resume
+  * Contact Me
+* profile image if it works well visually
+* optional subtle background effect or gradient glow
+
+The hero should feel strong, elegant, and modern.
+
+### 2. About Section
+
+Purpose:
+
+* communicate who I am professionally
+* explain my niche and strengths
+
+Include:
+
+* concise but well-written about text
+* my focus across data engineering, analytics, ML, and GenAI
+* emphasis on building production-grade solutions
+* concise personal brand statement
+
+### 3. Core Expertise Section
+
+Purpose:
+
+* show what I actually do in a visually strong way
+
+Replace generic skill bars with a much better presentation.
+
+Use cards or visual blocks for areas like:
+
+* Data Engineering
+* Machine Learning / Analytics
+* GenAI / LLM Systems
+* MLOps / Cloud Architecture
+
+Each item should feel like a service/expertise domain, not a percentage bar.
+
+### 4. Selected Projects Section
+
+Purpose:
+
+* showcase project work in a premium and structured way
+
+Use high-quality project cards.
+Each project card should include:
+
+* project image
+* project title
+* short description
+* tech stack tags
+* link to GitHub
+* optional category label
+
+Project cards must feel premium and interactive.
+
+### 5. Experience Section
+
+Purpose:
+
+* communicate career progression and credibility
+
+Use a modern timeline or stacked experience cards.
+Include:
+
+* company
+* role
+* dates
+* concise impact-oriented bullet points or short descriptions
+
+This section should look much more refined than a traditional resume block.
+
+### 6. Education / Certifications Section
+
+Purpose:
+
+* support credibility without overwhelming the page
+
+Include:
+
+* Statistics degree
+* Master in Analytics in progress
+* optional certifications or learning highlights
+
+Keep this section clean and compact.
+
+### 7. Tech Stack / Tools Section
+
+Purpose:
+
+* show concrete tools without looking like a messy logo wall
+
+Present grouped technologies in a visually disciplined way.
+Suggested groups:
+
+* Languages
+* Data / Processing
+* Cloud / Platforms
+* ML / AI
+* Dev Tools
+
+Avoid cheesy progress bars.
+Avoid a cluttered icon dump.
+
+### 8. Contact / CTA Section
+
+Purpose:
+
+* close the page strongly
+* encourage connection
+
+Include:
+
+* email
+* LinkedIn
+* GitHub
+* location
+* strong CTA copy
+
+This section should feel clean, premium, and intentional.
+
+### 9. Footer
+
+Include:
+
+* name
+* copyright or simple note
+* links if useful
+
+Minimal and elegant.
+
+---
+
+## 8. Navigation Requirements
+
+Replace the current tab-based navigation with a modern top navigation bar.
+
+Requirements:
+
+* sticky top navbar
+* semi-transparent or glass-like background if tasteful
+* anchors to page sections
+* active state while scrolling if practical
+* mobile menu for small screens
+* smooth scrolling
+
+Navigation should feel refined and lightweight.
+
+---
+
+## 9. Visual Style Requirements
+
+### Color System
+
+Use a dark premium palette with refined contrast.
+
+The palette should feel modern and elegant, inspired by data, cloud, AI, and software product design.
+
+Recommended direction:
+
+* deep charcoal / near-black base
+* soft off-white text
+* muted secondary text
+* one primary accent color
+* one optional complementary accent for gradients or highlights
+
+Potential accent directions:
+
+* indigo + cyan
+* blue + violet
+* slate + electric blue
+
+Avoid:
+
+* harsh yellow as the main visual identity
+* oversaturated neon everywhere
+* rainbow palettes
+* low-contrast gray-on-gray combinations
+
+The website should look premium on both laptop and mobile.
+
+### Typography
+
+Use modern, professional typography.
+Recommended font directions:
+
+* Inter
+* Space Grotesk
+* Manrope
+
+Use a clear hierarchy:
+
+* strong hero headline
+* clean section headings
+* readable body text
+* restrained use of uppercase labels
+
+Typography must feel high-end and product-oriented.
+
+### Surfaces and Components
+
+Use:
+
+* soft borders
+* subtle shadows
+* layered depth
+* restrained glow only where justified
+* rounded corners, but not cartoonishly large
+* clean card treatments
+
+Avoid:
+
+* old-fashioned gradients everywhere
+* thick borders everywhere
+* noisy textures
+* excessive glassmorphism
+
+---
+
+## 10. Motion and Animation Requirements
+
+Animations must be elegant, smooth, and restrained.
+Use **Framer Motion**.
+
+Allowed animation patterns:
+
+* fade in + slight upward motion on section reveal
+* staggered card reveals
+* subtle hover lift on cards
+* smooth button hover states
+* soft image zoom on hover where appropriate
+* animated underline or indicator in navigation
+* gentle background glow movement if subtle
+
+Avoid:
+
+* spinning elements
+* exaggerated parallax
+* bouncing effects
+* typewriter effects unless extremely tasteful
+* any animation that hurts readability or feels gimmicky
+
+Animation goals:
+
+* premium feel
+* polish
+* perceived quality
+* better hierarchy
+
+---
+
+## 11. UX Requirements
+
+The site must feel like it was designed by someone who understands premium product UX.
+
+Requirements:
+
+* strong spacing rhythm
+* excellent readability
+* clear visual hierarchy
+* obvious CTAs
+* easy scanning
+* no crowded sections
+* no long walls of text
+* cards must align cleanly
+* section transitions should feel natural
+* mobile layout must be excellent, not an afterthought
+
+The design should optimize for:
+
+* recruiters
+* hiring managers
+* technical peers
+* collaborators
+
+They should immediately understand:
+
+* who I am
+* what I do
+* what I build
+* what technologies I use
+* why I am credible
+
+---
+
+## 12. Content Guidance
+
+Use the content from the current portfolio as source material, but rewrite it where necessary to sound more polished, concise, and premium.
+
+Tone:
+
+* professional
+* confident
+* technically credible
+* concise
+* clean
+* no fluff
+* no buzzword spam
+
+Do not make it sound robotic.
+Do not overuse clichés like “passionate about innovation”.
+Do not write vague claims without technical substance.
+
+The copy should feel like it belongs to a strong engineer with real experience.
+
+---
+
+## 13. Current Professional Profile to Reflect
+
+The website should reflect this positioning:
+
+* Data Engineer
+* Data Scientist
+* GenAI Engineer
+* Experience in enterprise and financial environments
+* Focus on scalable data platforms, ETL/ELT, cloud architectures, analytics, MLOps, and LLM-based systems
+* Experience with Azure, AWS, Databricks, Spark, ML pipelines, and production-grade engineering
+
+The portfolio should emphasize that I bridge:
+
+* engineering
+* analytics
+* applied machine learning
+* generative AI systems
+
+---
+
+## 14. Resume / Experience Content to Preserve and Improve
+
+Preserve and reframe the following content where appropriate:
+
+### Professional summary
+
+* Statistician and Senior Data Engineer with experience in Data Engineering, Data Science, and GenAI solutions.
+* Experience building end-to-end solutions in enterprise and financial environments.
+* Focus on Clean Architecture, MLOps, scalable platforms, ETL/ELT, cloud-native services, LLM-based applications, and governance.
+
+### Experience
+
+* BBVA — Data Engineer / GenAI Engineer
+* Celerik — Data Scientist
+* RADS — Data Engineer / Data Scientist
+* SURA Seguros — Intern Data Engineer
+
+### Education
+
+* BSc in Statistics — National University of Colombia
+* Master in Analytics (in progress) — National University of Colombia
+
+### Core work areas
+
+* Data Engineering
+* Data Science and ML
+* GenAI and LLM solutions
+* MLOps and Cloud
+
+### Selected projects
+
+Use the current project references as initial content:
+
+* Currency Converter
+* Certifications & Notes
+* DP-100 Study App
+* Housing Analytics
+
+Improve how they are presented visually and editorially.
+
+---
+
+## 15. Component Architecture Requirements
+
+Organize the code into clean reusable components.
+
+Suggested component structure:
+
+* `Navbar`
+* `HeroSection`
+* `AboutSection`
+* `ExpertiseSection`
+* `ProjectsSection`
+* `ExperienceSection`
+* `EducationSection`
+* `TechStackSection`
+* `ContactSection`
+* `Footer`
+* reusable UI components such as:
+
+  * `SectionHeading`
+  * `ProjectCard`
+  * `ExperienceCard`
+  * `Tag`
+  * `Button`
+  * `Container`
+
+Keep components readable and scalable.
+
+---
+
+## 16. Data Management Approach
+
+Use structured local data for maintainability.
+
+Suggested approach:
+
+* create local TypeScript data objects or arrays for:
+
+  * projects
+  * experience
+  * education
+  * skills / tech stack
+  * social links
+
+Do not hardcode repeated content directly in deeply nested JSX if it can be modeled cleanly.
+
+---
+
+## 17. Accessibility Requirements
+
+The website must follow solid accessibility basics.
+
+Requirements:
+
+* semantic HTML
+* correct heading hierarchy
+* keyboard-accessible navigation
+* visible focus states
+* sufficient contrast
+* meaningful alt text for images
+* buttons and links clearly distinguishable
+* reduced motion support if practical
+
+Accessibility should be considered part of quality, not optional.
+
+---
+
+## 18. Responsive Requirements
+
+The site must be fully responsive and excellent on:
+
+* mobile phones
+* tablets
+* laptops
+* large desktop screens
+
+Mobile behavior requirements:
+
+* stacked sections with good spacing
+* readable typography
+* compact but elegant navbar/menu
+* project cards remain visually strong
+* CTAs remain obvious
+* no cramped grids
+* no broken alignment
+
+Desktop behavior requirements:
+
+* strong composition
+* effective use of whitespace
+* premium layout balance
+* sections should breathe
+
+---
+
+## 19. Performance Requirements
+
+Keep the site performant.
+
+Requirements:
+
+* optimize images where practical
+* avoid excessive client-side logic
+* avoid huge animation overhead
+* avoid bloated dependency usage
+* use clean Tailwind classes and reusable patterns
+* maintain a fast, smooth feel
+
+---
+
+## 20. SEO / Metadata Requirements
+
+Add solid baseline metadata:
+
+* page title
+* description
+* Open Graph basics
+* favicon handling if practical
+
+The site should be presentable when shared.
+
+---
+
+## 21. What to Avoid at All Costs
+
+Do not generate any of the following:
+
+* generic portfolio template feel
+* cheesy neon hacker aesthetic
+* overly corporate consulting page vibe
+* cluttered dashboards
+* progress bars for every skill
+* too many icons without structure
+* long text-heavy blocks
+* weak spacing
+* inconsistent card styles
+* multiple unrelated accent colors
+* poor mobile layout
+* unnecessary animations
+* stock-template section labels and filler text
+* lorem ipsum
+* fake metrics or invented achievements
+
+Do not create a design that looks like a student exercise.
+This must look like a polished, real portfolio.
+
+---
+
+## 22. Deliverables Expected
+
+Produce the full implementation, including:
+
+1. Project setup and folder structure
+2. Next.js pages and components
+3. Tailwind styling
+4. Framer Motion integrations
+5. Local data structures for content
+6. Static-export-compatible configuration
+7. Clean reusable components
+8. Final polished UI
+
+If useful, also include:
+
+* a short README with setup and deploy instructions for GitHub Pages
+
+---
+
+## 23. Quality Standard
+
+Before considering the implementation complete, validate the result against this standard:
+
+* Does this look like a premium tech portfolio?
+* Does it feel modern and intentional?
+* Does it communicate real engineering credibility?
+* Is the layout substantially better than a CV-style page?
+* Is the typography polished?
+* Is the color system coherent?
+* Are the animations subtle and high quality?
+* Is the mobile version strong?
+* Is the code clean and maintainable?
+* Is the site ready for GitHub Pages static deployment?
+
+If any answer is no, improve it.
+
+---
+
+## 24. Implementation Instruction
+
+Now implement the project from scratch following all the requirements above.
+
+Use the current portfolio only as content reference, not as a design template.
+
+Make strong professional decisions where needed, but remain faithful to the objective:
+**build a premium, elegant, modern, production-quality portfolio for a Data Engineer / Data Scientist / GenAI Engineer, deployable as a static GitHub Pages site.**
+
+Start by creating the project structure and then implement the full page with all sections, reusable components, styling system, and motion.
+
+---
+
+## 25. Optional Creative Direction Notes
+
+If a visual direction decision is needed, prioritize this aesthetic:
+
+* dark premium UI
+* deep charcoal background
+* indigo/cyan or blue/violet accent glow
+* soft gradients used sparingly
+* modern typography
+* clean card-based storytelling
+* subtle motion
+* startup-quality polish
+* technical elegance over decorative excess
+
+This portfolio should feel like the online presence of someone who builds serious data and AI systems.

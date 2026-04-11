@@ -55,12 +55,11 @@ export function HeroSection() {
                   </p>
                 </div>
                 <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-<Image
-                    src="/images/smith.png"
-                    alt="Portrait of Jhonatan Smith"
-                    fill
-                    className="object-cover"
-                  />
+<img
+  src="/Portafolio.io/images/smith.png"
+  alt="Portrait of Jhonatan Smith"
+  className="object-cover w-full h-full"
+/>
                 </div>
               </div>
 

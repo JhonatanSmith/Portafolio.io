@@ -1,15 +1,12 @@
-/** @type {import('next').NextConfig} */
-const path = require('path');
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  outputFileTracingRoot: path.join(__dirname),
-  basePath,
-  assetPrefix: basePath || undefined,
+  basePath: isProd ? '/Portafolio.io' : '',
+  assetPrefix: isProd ? '/Portafolio.io/' : '',
   trailingSlash: true,
 };
 

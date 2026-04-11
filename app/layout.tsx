@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     title,
     description,
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
+icons: {
+  icon: "/Portafolio.io/favicon.ico",
+}
 };
 
 export const viewport: Viewport = {

@@ -19,7 +19,7 @@ export const siteConfig = {
   githubLabel: "github.com/JhonatanSmith",
   linkedin: "https://www.linkedin.com/in/jhsgarciamu/",
   linkedinLabel: "linkedin.com/in/jhsgarciamu",
-  resumeHref: "/Portafolio.io/Jhonatan-Smith-Resume.html",
+  resumeHref: "/Jhonatan-Smith-Resume.html",
   heroSummary:
     "Statistician and Senior Data Engineer focused on scalable data platforms, applied machine learning, cloud-native architecture, and LLM-powered systems across enterprise and financial environments.",
   shortBio:

@@ -2,7 +2,7 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { Tag } from "@/components/tag";
 import { Project } from "@/data/types";
 import Image from "next/image";
-
+import { withBasePath } from "@/lib/utils"; // 👈 Importa la función
 type ProjectCardProps = {
   project: Project;
 };
@@ -12,10 +12,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <article className="group section-card overflow-hidden">
       <div className="relative aspect-[16/10] overflow-hidden border-b border-white/10">
 <img
-  src={project.image}
-  alt={project.imageAlt}
-  className="object-cover w-full h-full transition duration-500 group-hover:scale-105"
-/>
+          src={withBasePath(project.image)}
+          alt={project.imageAlt}
+          className="object-cover w-full h-full transition duration-500 group-hover:scale-105"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[#07101dcc] via-[#07101d40] to-transparent" />
         <div className="absolute left-4 top-4">
           <span className="rounded-full border border-white/10 bg-[#08111fd9] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-200">

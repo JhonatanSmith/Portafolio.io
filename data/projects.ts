@@ -36,7 +36,7 @@ export const projects: Project[] = [
     description:
       "An analytics project exploring housing prices and gentrification-related patterns in Colombia through data analysis and contextual interpretation.",
     category: "Analytics",
-    image: "/Portafolio.io/images/project-4.png",
+    image: "/images/project-4.png",
     imageAlt: "Preview of the Housing Analytics project",
     githubUrl: "https://github.com/JhonatanSmith/House-renting-prices",
     stack: ["Python", "EDA", "Statistical analysis"],

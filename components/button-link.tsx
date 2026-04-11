@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { AnchorHTMLAttributes, ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils"; // 👈 Importa withBasePath
 
 type ButtonLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
@@ -13,6 +13,7 @@ export function ButtonLink({
   className,
   variant = "primary",
   icon = false,
+  href,
   ...props
 }: ButtonLinkProps) {
   const styles = {
@@ -24,8 +25,15 @@ export function ButtonLink({
       "text-slate-200 hover:bg-white/6",
   } as const;
 
+  // 👇 Lógica dinámica usando tu helper
+  let finalHref = href || "#";
+  if (finalHref.startsWith("/") && !finalHref.startsWith("//")) {
+    finalHref = withBasePath(finalHref);
+  }
+
   return (
     <a
+      href={finalHref}
       className={cn(
         "inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-300",
         styles[variant],

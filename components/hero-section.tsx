@@ -4,6 +4,7 @@ import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { Tag } from "@/components/tag";
 import { siteConfig } from "@/data/site";
+import { withBasePath } from "@/lib/utils";
 
 export function HeroSection() {
   return (
@@ -55,7 +56,7 @@ export function HeroSection() {
                 </div>
                 <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
                   <Image
-                    src="/images/smith.png"
+                    src={withBasePath("/images/smith.png")}
                     alt="Portrait of Jhonatan Smith"
                     fill
                     sizes="80px"

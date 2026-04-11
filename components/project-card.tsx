@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowUpRight, Github } from "lucide-react";
 import { Tag } from "@/components/tag";
 import { Project } from "@/data/types";
+import { withBasePath } from "@/lib/utils";
 
 type ProjectCardProps = {
   project: Project;
@@ -12,7 +13,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <article className="group section-card overflow-hidden">
       <div className="relative aspect-[16/10] overflow-hidden border-b border-white/10">
         <Image
-          src={project.image}
+          src={withBasePath(project.image)}
           alt={project.imageAlt}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"

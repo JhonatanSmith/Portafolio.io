@@ -3,9 +3,8 @@ export function cn(...classes: Array<string | false | null | undefined>) {
 }
 
 export const getBasePath = () => {
-  return process.env.NODE_ENV === "production"
-    ? "/Portafolio.io"
-    : "";
+  // Quemado. Nada de process.env. 
+  return "/Portafolio.io"; 
 };
 
 export const withBasePath = (path: string) => {

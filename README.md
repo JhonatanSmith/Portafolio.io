@@ -33,4 +33,4 @@ If the site is deployed under a repository path instead of a root domain, set:
 NEXT_PUBLIC_BASE_PATH=/your-repo-name
 ```
 
-before running the production build.
+before running the production build. The build was done and now is ready to production. 

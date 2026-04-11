@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { AnchorHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 type ButtonLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
@@ -25,16 +26,17 @@ export function ButtonLink({
   } as const;
 
   return (
-    <a
+<Link
+      href={props.href || "#"}
       className={cn(
         "inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-300",
         styles[variant],
         className,
       )}
-      {...props}
+      {...(props as any)}
     >
       <span>{children}</span>
       {icon ? <ArrowUpRight className="h-4 w-4" aria-hidden="true" /> : null}
-    </a>
+    </Link>
   );
 }

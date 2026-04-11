@@ -4,6 +4,7 @@ import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { Tag } from "@/components/tag";
 import { siteConfig } from "@/data/site";
+import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -54,11 +55,12 @@ export function HeroSection() {
                   </p>
                 </div>
                 <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-<img
-  src="/Portafolio.io/images/smith.png"
-  alt="Portrait of Jhonatan Smith"
-  className="object-cover w-full h-full"
-/>
+<Image
+                    src="/images/smith.png"
+                    alt="Portrait of Jhonatan Smith"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
 

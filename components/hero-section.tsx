@@ -55,14 +55,11 @@ export function HeroSection() {
                   </p>
                 </div>
                 <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                  <Image
-                    src={withBasePath("/images/smith.png")}
-                    alt="Portrait of Jhonatan Smith"
-                    fill
-                    sizes="80px"
-                    className="object-cover"
-                    priority
-                  />
+                <img
+                  src={withBasePath("/images/smith.png")}
+                  alt="Portrait of Jhonatan Smith"
+                  className="object-cover w-full h-full"
+                />
                 </div>
               </div>
 

@@ -4,7 +4,6 @@ import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { Tag } from "@/components/tag";
 import { siteConfig } from "@/data/site";
-import { withBasePath } from "@/lib/utils";
 
 export function HeroSection() {
   return (

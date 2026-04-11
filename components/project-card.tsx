@@ -1,7 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { Tag } from "@/components/tag";
 import { Project } from "@/data/types";
-import { withBasePath } from "@/lib/utils";
 
 type ProjectCardProps = {
   project: Project;

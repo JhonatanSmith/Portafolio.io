@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowUpRight, Github } from "lucide-react";
 import { Tag } from "@/components/tag";
 import { Project } from "@/data/types";

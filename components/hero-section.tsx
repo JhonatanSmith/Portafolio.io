@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { AnimatedSection } from "@/components/animated-section";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";

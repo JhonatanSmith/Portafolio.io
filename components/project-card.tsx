@@ -11,7 +11,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <article className="group section-card overflow-hidden">
       <div className="relative aspect-[16/10] overflow-hidden border-b border-white/10">
 <img
-  src={`images/${project.image.split('/').pop()}`}
+  src={`/Portafolio.io/images/${project.image.split('/').pop()}`}
   alt={project.imageAlt}
   className="object-cover w-full h-full transition duration-500 group-hover:scale-105"
 />

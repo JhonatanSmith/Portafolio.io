@@ -55,7 +55,7 @@ export function HeroSection() {
                 </div>
                 <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
 <img
-  src="images/smith.png"
+  src="./images/smith-v2.png"
   alt="Portrait of Jhonatan Smith"
   className="object-cover w-full h-full"
 />

@@ -19,7 +19,7 @@ export function ExpertiseSection() {
         <AnimatedSection>
           <SectionHeading
             label="Core Expertise"
-            title="Capabilities framed as delivery domains, not percentage bars."
+            title="Knowledge and experience across data, ML, GenAI, and cloud engineering."
             description="Each area reflects the kind of systems I build and the engineering problems I like to solve: scalable data movement, model-backed analytics, cloud-native operations, and LLM applications grounded in useful architecture."
           />
         </AnimatedSection>

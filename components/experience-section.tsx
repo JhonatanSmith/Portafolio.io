@@ -12,7 +12,7 @@ export function ExperienceSection() {
           <SectionHeading
             label="Experience"
             title="Career progression shaped by enterprise delivery and practical data work."
-            description="The presentation is intentionally impact-oriented. The goal is to show a profile that can move between data engineering, applied ML, and GenAI initiatives without losing architectural discipline."
+            description="Been here in data Science field for a While. Hoping to stay a little bit more."
           />
         </AnimatedSection>
 

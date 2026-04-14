@@ -12,7 +12,7 @@ export function EducationSection() {
           <SectionHeading
             label="Education"
             title="Academic grounding in statistics, reinforced by ongoing analytical depth."
-            description="This section stays compact on purpose. It supports credibility without interrupting the portfolio flow."
+            description="BSc in Statistics. But that's not all... Hope to get my masters soon!"
           />
         </AnimatedSection>
 

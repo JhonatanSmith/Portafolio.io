@@ -25,8 +25,8 @@ export function AboutSection() {
         <AnimatedSection>
           <SectionHeading
             label="About"
-            title="A technical profile built across engineering, analytics, and modern AI."
-            description="The portfolio is positioned around production-grade delivery, not CV filler. The narrative is simple: architect robust data foundations, turn them into usable analytics and ML systems, and extend them into GenAI products when the use case justifies it."
+            title="Engineering, analytics, and modern AI."
+            description="This is a little bit of me, what I do, and how I think about the work I want to do. If you want to know more, just reach out."
           />
         </AnimatedSection>
 

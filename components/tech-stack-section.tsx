@@ -11,7 +11,7 @@ export function TechStackSection() {
         <AnimatedSection>
           <SectionHeading
             label="Tech Stack"
-            title="Tools presented in disciplined groups instead of a cluttered logo wall."
+            title="My Tech stack. Demosrtating my nerd side."
             description="The point is not to list everything. The point is to show the environments and technologies I regularly use to move from ingestion to modeling to deployment."
           />
         </AnimatedSection>

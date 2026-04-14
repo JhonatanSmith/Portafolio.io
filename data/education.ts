@@ -11,7 +11,7 @@ export const education: EducationItem[] = [
   {
     title: "Master in Analytics",
     institution: "National University of Colombia",
-    period: "2024 - Present",
+    period: "2025 - Present",
     description:
       "Graduate studies in progress, reinforcing depth in analytics while staying closely connected to practical engineering and applied modeling work.",
   },
@@ -21,16 +21,16 @@ export const learningSignals = [
   {
     title: "Certification preparation",
     description:
-      "Ongoing study material and project work around Azure Machine Learning and cloud-oriented certifications.",
+      "Still doing some certs, but focused iinto cloud architecture, data engineering, and applied AI patterns that directly inform my work and learning path.",
   },
   {
-    title: "Technical writing and notes",
+    title: "Research",
     description:
-      "A documented habit of organizing architecture notes, certification material, and implementation learnings in public repositories.",
+      "Worked in different papers with multidisciplinary teams to do some epidemiology research, and also in some applied machine learning research projects mainly as Statistician",
   },
   {
-    title: "Applied experimentation",
+    title: "ORCII Code and research",
     description:
-      "Personal projects used as a proving ground for analytics, automation, cloud workflows, and modern AI patterns.",
+      "Wanna see some cool articles? Here's my code! You know how to search with it (0009-0005-1346-8088)",
   },
 ];

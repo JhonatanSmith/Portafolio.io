@@ -12,7 +12,7 @@ export function ProjectsSection() {
           <SectionHeading
             label="Selected Projects"
             title="A focused set of projects that show depth, curiosity, and execution."
-            description="The current portfolio references are reframed as a knowledge hub: study tools, analytics work, cloud learning, and practical applications that reinforce an engineering-first profile."
+            description="The current portfolio references are reframed as a knowledge hub: study tools, analytics work, cloud learning, and practical applications that reinforce an engineering-first profile. When i created this webn i used some basic projects there but i havent update. I suggest you to take a walk into my GitHub, there you can find the really cool stuffs that i have been working on. "
           />
         </AnimatedSection>
 

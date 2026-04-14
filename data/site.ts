@@ -11,7 +11,7 @@ export const navItems: NavItem[] = [
 ];
 
 export const siteConfig = {
-  name: "Jhonatan Smith",
+  name: "Jhonatan Smith Garcia",
   shortRole: "Data Engineer | Data Scientist | GenAI Engineer",
   email: "jhsgarciamu@outlook.com",
   location: "Medellin, Colombia",
